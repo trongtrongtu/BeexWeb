@@ -1,13 +1,39 @@
 import React, { Component } from 'react';
-import { LineOutlined, AppleOutlined } from '@ant-design/icons';
+import { LineOutlined, AndroidFilled, AppleFilled, DesktopOutlined } from '@ant-design/icons';
+import { Form, Input, Button, Checkbox } from 'antd';
 import Slider from "react-slick";
-import { Button } from 'antd';
 import Beex_IOT_Platform_1 from './images/Beex_IOT_Platform_1.png';
 import thiet_bi_gui_tin_nhan from './images/thiet_bi_gui_tin_nhan.png';
 import cam_bien_moi_truong from './images/cam_bien_moi_truong.png';
+import Camera from './images/Camera.png';
+import Bigdata from './images/Bigdata.png';
+import Communication from './images/Communication.png';
+import cmc_global from './images/cmc_global.png';
+import ho_tro from './images/ho_tro.png';
 
 class Solution extends Component {
   render() {
+    const layout = {
+      labelCol: {
+        span: 8,
+      },
+      wrapperCol: {
+        span: 16,
+      },
+    };
+    const tailLayout = {
+      wrapperCol: {
+        offset: 4,
+        span: 16,
+      },
+    };
+    const onFinish = values => {
+      console.log('Success:', values);
+    };
+
+    const onFinishFailed = errorInfo => {
+      console.log('Failed:', errorInfo);
+    };
     var settings = {
       dots: true,
       infinite: true,
@@ -156,6 +182,7 @@ class Solution extends Component {
           <section className="awe-section-3" style={{ background: '#0E9347' }}>
             <div className="clearfix">
               <div className="container" style={{ color: '#FFFFFF' }}>
+                <br />
                 <span className="section_service_tab3">
                   <span>BEEX HỖ TRỢ ĐA NỀN TẢNG</span>
                 </span>
@@ -164,19 +191,19 @@ class Solution extends Component {
                   <span>Đã có mặt trên Desktop và Mobile</span>
                 </span>
                 <span className="section_service_tab5">
-                  <ul className="item_big" style={{ display: 'inline-flex' }}>
+                  <ul className="item_big" style={{ display: 'inline-flex', marginTop: '-15px' }}>
                     <li className="nav-item">
-                      <AppleOutlined />
+                      <DesktopOutlined style={{ fontSize: '50px', color: '#FFFFFF', marginRight: '100px' }} />
                       <br />
                       <span>Desktop</span>
                     </li>
                     <li className="nav-item ">
-                      <AppleOutlined />
+                      <AppleFilled style={{ fontSize: '50px', color: '#FFFFFF', marginRight: '100px' }} />
                       <br />
-                      <span>Ios</span>
+                      <span style={{ marginLeft: '15px' }}>Ios</span>
                     </li>
                     <li className="nav-item ">
-                      <AppleOutlined />
+                      <AndroidFilled style={{ fontSize: '50px', color: '#FFFFFF', marginRight: '100px' }} />
                       <br />
                       <span>Android</span>
                     </li>
@@ -189,6 +216,135 @@ class Solution extends Component {
             <br />
             <br />
           </section>
+        </section>
+        <section className="awe-section-3">
+          <div className="section_service_tab clearfix">
+            <div className="container">
+              <h3 className="c-center text-center">TÍCH HỢP HỆ THỐNG</h3>
+              <div className="title-wrap text-center">
+                <h2 className="h1 double-title">
+                  <span>Linh hoạt trong khả năng kết nối và đồng bộ với các hệ thống khác</span>
+                </h2>
+              </div>
+              <div className="nav nav-pills-icons" role="tablist">
+                <div style={{ marginRight: '150px' }}>
+                  <div className="div1"><img style={{ width: '77px', height: '62px', margin: "44px 38px" }} src={Camera} alt="Về chúng tôi" /></div>
+                  <div style={{ textAlign: 'center', margin: '0px 39px' }}>
+                    <div><strong style={{ color: '#0E9347' }}>Camera</strong></div>
+                    <div style={{ width: '160px' }}>Dễ dàng kết nối Camera. Linh hoạt trong khả năng kết nối và đồng bộ với các hệ thống khác</div>
+                  </div>
+                </div>
+                <div style={{ marginRight: '150px' }}>
+                  <div className="div1"><img style={{ width: '77px', height: '62px', margin: "44px 38px" }} src={Bigdata} alt="Về chúng tôi" /></div>
+                  <div style={{ textAlign: 'center', margin: '0px 39px' }}>
+                    <div><strong style={{ color: '#0E9347' }}>Bigdata</strong></div>
+                    <div style={{ width: '160px' }}>Dễ dàng kết nối Bigdata. Linh hoạt trong khả năng kết nối và đồng bộ với các hệ thống khác</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="div1"><img style={{ width: '77px', height: '62px', margin: "44px 38px" }} src={Communication} alt="Về chúng tôi" /></div>
+                  <div style={{ textAlign: 'center', margin: '0px 39px' }}>
+                    <div><strong style={{ color: '#0E9347' }}>Communication</strong></div>
+                    <div style={{ width: '160px' }}>Linh hoạt trong khả năng kết nối và đồng bộ với các hệ thống khác</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="awe-section-3">
+          <div className="section_service_tab1 clearfix">
+            <div className="container">
+              <h3 className="c-center text-center">USE CASE</h3>
+              <div className="title-wrap">
+                <div className="h1 double-title">
+                  <span>Dự án Beex IOT Platform đã triển khai thành công</span>
+                </div>
+              </div>
+              <div className="title-wrap">
+                <div className="double-title">
+                  <img className="lazyload imageload img-fluid loaded" style={{ marginTop: "30px", width: '639px', height: '436px' }} src={cmc_global} alt="cmc datacenter" data-was-processed="true" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="awe-section-2">
+          <div className="section_about1 lazyload">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-7 col-xl-7">
+                  <img style={{ marginLeft: '10%', marginTop: '12%', width: '450px', height: '450px' }} src={ho_tro} alt="Về chúng tôi" />
+                </div>
+                <div className="col-md-5 col-xl-5">
+                  <div className="department-carousel2">
+                    <div className="department-item">
+                      <div className="h-sub text-center" style={{ marginBottom: '50px', marginTop: '20px', marginRight: '50px' }}>BẠN CẦN CHÚNG TÔI HỖ TRỢ</div>
+                      <Form
+                        {...layout}
+                        name="basic"
+                        initialValues={{
+                          remember: true,
+                        }}
+                        onFinish={onFinish}
+                        onFinishFailed={onFinishFailed}
+                      >
+                        <Form.Item
+                          name="username"
+                          rules={[
+                            {
+                              required: true,
+                              message: 'Please input your username!',
+                            },
+                          ]}
+                        >
+                          <Input style={{ borderRadius: '30px', width: '416px', height: '48px', maxWidth: 'initial' }} placeholder="Họ tên liên lạc" />
+                        </Form.Item>
+                        <Form.Item
+                          name="number"
+                          rules={[
+                            {
+                              required: true,
+                              message: 'Please input your number!',
+                            },
+                          ]}
+                        >
+                          <Input style={{ borderRadius: '30px', width: '416px', height: '48px', maxWidth: 'initial' }} placeholder="Số điện thoại" />
+                        </Form.Item>
+                        <Form.Item
+                          name="email"
+                          rules={[
+                            {
+                              required: true,
+                              message: 'Please input your email!',
+                            },
+                          ]}
+                        >
+                          <Input style={{ borderRadius: '30px', width: '416px', height: '48px', maxWidth: 'initial' }} placeholder="Email" />
+                        </Form.Item>
+                        <Form.Item
+                          name="support"
+                          rules={[
+                            {
+                              required: true,
+                              message: 'Please input your text support!',
+                            },
+                          ]}
+                        >
+                          <Input.TextArea style={{ borderRadius: '30px', width: '416px', height: '120px', maxWidth: 'initial' }} placeholder="Chúng tôi sẵn sàng lắng nghe ý kiến hỗ trợ của bạn" />
+                        </Form.Item>
+                        <Form.Item {...tailLayout}>
+                          <Button type="primary" style={{ borderRadius: '30px', width: '264px', height: '48px', maxWidth: 'initial', background: '#0F813F' }} htmlType="submit">
+                            <strong>GỬI HỖ TRỢ</strong>
+                          </Button>
+                        </Form.Item>
+                      </Form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </>
     )

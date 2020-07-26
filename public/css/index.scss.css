@@ -246,6 +246,16 @@
   background-attachment: fixed
 }
 
+.section_about1 {
+  padding: 50px 0 50px 0;
+  position: relative;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: rgba(14, 147, 71, 0.05);
+  ;
+  background-attachment: fixed
+}
+
 @media (max-width: 1199px) {
   .section_about {
     background-image: none !important;
@@ -438,7 +448,7 @@
 }
 
 .section_service_tab4 {
-  font-family: Fujiyama;
+  /* font-family: Fujiyama; */
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -450,7 +460,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
-  line-height: 18px;
+  /* line-height: 18px; */
   float: right;
 }
 
