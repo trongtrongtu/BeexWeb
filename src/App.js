@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import Home from './Compoment/Home/Home'
-import Solution from './Compoment/Solution/Solution';
+import Solution from './Compoment/Solution/BeexIotPlatform';
+import Header from './Compoment/Header/Header';
+import Footer from './Compoment/Footer/Footer';
 
 export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Home />
-        <br />
-        <br />
-        <br />
+        <Header />
         <Switch>
-          <Route path="/solution" component={Solution} />
+          <Route exact path="/" component={Home} />
+          <Route path="/BeexIotPlatform" component={Solution} />
         </Switch>
+        <Footer />
       </React.Fragment>
     );
   }
