@@ -4,6 +4,7 @@ import Home from './Compoment/Home/Home'
 import Solution from './Compoment/Solution/BeexIotPlatform';
 import Header from './Compoment/Header/Header';
 import Footer from './Compoment/Footer/Footer';
+import BeexIotPlatformDetail from './Compoment/Detail/BeexIotPlatformDetail';
 
 export default class App extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/BeexIotPlatform" component={Solution} />
+          <Route path="/Detail" component={BeexIotPlatformDetail} />
         </Switch>
         <Footer />
       </React.Fragment>

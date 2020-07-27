@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { LineOutlined, AndroidFilled, AppleFilled, DesktopOutlined } from '@ant-design/icons';
 import { Form, Input, Button, Checkbox } from 'antd';
+import { Link } from 'react-router-dom'
 import Slider from "react-slick";
 import Beex_IOT_Platform_1 from './images/Beex_IOT_Platform_1.png';
 import thiet_bi_gui_tin_nhan from './images/thiet_bi_gui_tin_nhan.png';
@@ -111,7 +112,7 @@ class Solution extends Component {
                   <div>- Tải app Beex.vn trên Google Play và App Store</div>
                   <br />
                   <Button className="a-img" title="Dùng thử tính năng" size='large' style={{ background: "#0E9347", borderRadius: "20px", border: "1px", fontSize: '14px' }}>
-                    <span className="b-center">Dùng thử tính năng</span>
+                    <span className="b-center"><Link title="Dùng thử tính năng" to="/Detail" style={{ color: '#FFFFFF' }}>Dùng thử tính năng</Link></span>
                   </Button>
                 </div>
               </div>
