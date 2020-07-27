@@ -39,8 +39,8 @@ class Solution extends Component {
       infinite: true,
       slidesToShow: 5,
       slidesToScroll: 1,
-      // autoplay: true,
-      // autoplaySpeed: 5000,
+      autoplay: true,
+      autoplaySpeed: 3000,
       pauseOnHover: true
     };
     return (
@@ -228,21 +228,21 @@ class Solution extends Component {
               </div>
               <div className="nav nav-pills-icons" role="tablist">
                 <div style={{ marginRight: '150px' }}>
-                  <div className="div1"><img style={{ width: '77px', height: '62px', margin: "44px 38px" }} src={Camera} alt="Về chúng tôi" /></div>
+                  <div className="div1"><img style={{ width: '70px', height: '65px', margin: "44px 38px" }} src={Camera} alt="Về chúng tôi" /></div>
                   <div style={{ textAlign: 'center', margin: '0px 39px' }}>
                     <div><strong style={{ color: '#0E9347' }}>Camera</strong></div>
                     <div style={{ width: '160px' }}>Dễ dàng kết nối Camera. Linh hoạt trong khả năng kết nối và đồng bộ với các hệ thống khác</div>
                   </div>
                 </div>
                 <div style={{ marginRight: '150px' }}>
-                  <div className="div1"><img style={{ width: '77px', height: '62px', margin: "44px 38px" }} src={Bigdata} alt="Về chúng tôi" /></div>
+                  <div className="div1"><img style={{ width: '70px', height: '65px', margin: "44px 38px" }} src={Bigdata} alt="Về chúng tôi" /></div>
                   <div style={{ textAlign: 'center', margin: '0px 39px' }}>
                     <div><strong style={{ color: '#0E9347' }}>Bigdata</strong></div>
                     <div style={{ width: '160px' }}>Dễ dàng kết nối Bigdata. Linh hoạt trong khả năng kết nối và đồng bộ với các hệ thống khác</div>
                   </div>
                 </div>
                 <div>
-                  <div className="div1"><img style={{ width: '77px', height: '62px', margin: "44px 38px" }} src={Communication} alt="Về chúng tôi" /></div>
+                  <div className="div1"><img style={{ width: '70px', height: '65px', margin: "44px 38px" }} src={Communication} alt="Về chúng tôi" /></div>
                   <div style={{ textAlign: 'center', margin: '0px 39px' }}>
                     <div><strong style={{ color: '#0E9347' }}>Communication</strong></div>
                     <div style={{ width: '160px' }}>Linh hoạt trong khả năng kết nối và đồng bộ với các hệ thống khác</div>
